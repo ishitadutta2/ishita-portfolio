@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 | Page Not Found</title>
+
+<link rel="icon" href="favicon.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:#0B1120;
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+color:#fff;
+
+position:relative;
+
+}
+
+/* Animated Background */
+
+body::before{
+
+content:"";
+
+position:absolute;
+
+width:650px;
+
+height:650px;
+
+background:#4F46E5;
+
+border-radius:50%;
+
+filter:blur(220px);
+
+opacity:.18;
+
+top:-250px;
+
+left:-220px;
+
+animation:move1 8s ease-in-out infinite alternate;
+
+}
+
+body::after{
+
+content:"";
+
+position:absolute;
+
+width:550px;
+
+height:550px;
+
+background:#06B6D4;
+
+border-radius:50%;
+
+filter:blur(220px);
+
+opacity:.16;
+
+bottom:-250px;
+
+right:-220px;
+
+animation:move2 9s ease-in-out infinite alternate;
+
+}
+
+@keyframes move1{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(70px,40px);
+
+}
+
+}
+
+@keyframes move2{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(-70px,-40px);
+
+}
+
+}
+
+/* Card */
+
+.container{
+
+position:relative;
+
+z-index:5;
+
+width:min(92%,720px);
+
+padding:60px 45px;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:30px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+transition:.4s;
+
+}
+
+.container:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* Logo */
+
+.logo{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+margin-bottom:18px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo img{
+
+width:65px;
+
+height:65px;
+
+}
+
+/* Floating Code */
+
+.icon{
+
+font-size:52px;
+
+color:#7C3AED;
+
+margin-bottom:15px;
+
+animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/* 404 */
+
+.error{
+
+font-size:95px;
+
+font-family:'Space Grotesk',sans-serif;
+
+font-weight:700;
+
+background:linear-gradient(90deg,#4F46E5,#06B6D4);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+margin-bottom:8px;
+
+}
+
+h2{
+
+font-size:34px;
+
+font-family:'Space Grotesk',sans-serif;
+
+margin-bottom:18px;
+
+}
+
+p{
+
+font-size:17px;
+
+color:#CBD5E1;
+
+line-height:1.8;
+
+max-width:520px;
+
+margin:auto;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.button{
+
+padding:14px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.primary{
+
+background:linear-gradient(135deg,#4F46E5,#7C3AED);
+
+color:white;
+
+box-shadow:0 15px 35px rgba(79,70,229,.35);
+
+}
+
+.primary:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 40px rgba(79,70,229,.5);
+
+}
+
+.secondary{
+
+background:transparent;
+
+color:white;
+
+border:1px solid #7C3AED;
+
+}
+
+.secondary:hover{
+
+background:rgba(124,58,237,.15);
+
+transform:translateY(-4px);
+
+}
+
+/* Social */
+
+.social{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+}
+
+.social a{
+
+width:46px;
+
+height:46px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+color:white;
+
+font-size:20px;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.social a:hover{
+
+background:#4F46E5;
+
+transform:translateY(-5px);
+
+}
+
+/* Footer */
+
+.footer{
+
+margin-top:35px;
+
+font-size:14px;
+
+color:#94A3B8;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container{
+
+padding:45px 25px;
+
+}
+
+.error{
+
+font-size:70px;
+
+}
+
+h2{
+
+font-size:28px;
+
+}
+
+p{
+
+font-size:15px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.button{
+
+width:220px;
+
+}
+
+.logo{
+
+width:75px;
+
+height:75px;
+
+}
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<img src="favicon.ico" alt="Logo">
+</div>
+
+<div class="icon">
+&lt;/&gt;
+</div>
+
+<div class="error">
+404
+</div>
+
+<h2>Looks like you're lost.</h2>
+
+<p>
+The page you're trying to access doesn't exist or may have been moved.
+Let's get you back to my portfolio and continue exploring my work.
+</p>
+
+<div class="buttons">
+
+<a href="index.html" class="button primary">
+🏠 Back Home
+</a>
+
+<a href="ishita-dutta-resume.pdf" target="_blank" class="button secondary">
+📄 Resume
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="https://github.com/ishitadutta2" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="mailto:duttaishita112@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+<div class="footer">
+
+© 2026 Ishita Dutta • AI & Full Stack Developer
+
+</div>
+
+</div>
+
+</body>
+</html>
