@@ -2,57 +2,45 @@
 
 <div align="center">
 
-### 💻 Software Developer | 🤖 AI/ML Enthusiast | 🌐 Full Stack Web Developer
+### 💻 Software Developer • 🤖 AI/ML Enthusiast • 🌐 Full Stack Developer
 
-<p>
-A passionate Computer Science undergraduate who loves building intelligent applications, modern web experiences, and solving real-world problems through technology.
-</p>
+A passionate Computer Science undergraduate dedicated to building intelligent applications, modern web experiences, and impactful software solutions.
+
+[🌐 Live Portfolio](https://ishitadutta2.github.io/ishita-portfolio/) • [💼 LinkedIn](https://linkedin.com/in/ishita-dutta-202510396/) • [💻 GitHub](https://github.com/ishitadutta2)
 
 </div>
 
 ---
 
-## 🌐 Live Portfolio
-
-🔗 **Portfolio:** https://ishitadutta2.github.io/ishita-portfolio/
-
----
-
-## 📖 About
+# 🌟 About This Portfolio
 
 This repository contains the source code for my personal portfolio website.
 
-It showcases my:
+It highlights my journey as a Computer Science student, showcasing my technical skills, projects, achievements, certifications, and experience in AI, Machine Learning, and Full Stack Web Development.
 
-- 👩‍💻 About Me
-- 🎓 Education
-- 🚀 Projects
-- 💼 Experience
-- 🛠️ Technical Skills
-- 📜 Certifications
-- 📄 Resume
-- 📬 Contact Information
-
-The portfolio is fully responsive and designed to provide a seamless experience across desktop, tablet, and mobile devices.
+The website is designed with a modern UI, responsive layout, and smooth user experience across desktop, tablet, and mobile devices.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 - 🎨 Modern & Professional UI
 - 📱 Fully Responsive Design
 - 🌙 Dark Theme
-- ⚡ Smooth Scrolling Navigation
-- 🎯 Interactive Project Cards
-- 📄 Resume Download
-- 📧 Contact Section
+- ⚡ Smooth Animations
+- 🚀 Interactive Project Showcase
+- 💼 Experience Timeline
+- 🎓 Education Section
+- 🛠 Technical Skills
+- 📜 Certifications
+- 📄 Resume Access
+- 📬 Contact Section
 - 🔗 GitHub & LinkedIn Integration
-- 🚀 Fast Loading
-- 💻 Clean and Maintainable Code
+- ⚙️ Optimized Performance
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠 Tech Stack
 
 - HTML5
 - CSS3
@@ -64,7 +52,7 @@ The portfolio is fully responsive and designed to provide a seamless experience 
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 ishita-portfolio/
@@ -74,71 +62,77 @@ ishita-portfolio/
 ├── favicon.ico
 ├── profile-photo.jpeg
 ├── ishita-dutta-resume.pdf
-└── README.md
+├── README.md
+├── LICENSE
+├── robots.txt
+└── sitemap.xml
 ```
 
 ---
 
-## 📸 Preview
+# 🚀 Live Website
 
-> Add a screenshot of your portfolio here after deployment.
+🔗 **Portfolio**
 
-Example:
-
-```
-portfolio-preview.png
-```
-
-Then insert:
-
-```markdown
-![Portfolio Preview](portfolio-preview.png)
-```
+https://ishitadutta2.github.io/ishita-portfolio/
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Run Locally
 
-Clone this repository:
+Clone the repository
 
 ```bash
 git clone https://github.com/ishitadutta2/ishita-portfolio.git
 ```
 
-Open the project:
+Go to the project folder
 
 ```bash
 cd ishita-portfolio
 ```
 
-Run:
+Open
 
-Simply open **index.html** in your browser.
+```text
+index.html
+```
 
----
-
-## 📬 Connect With Me
-
-📧 **Email:** duttaishita112@gmail.com
-
-💼 **LinkedIn:** https://linkedin.com/in/ishita-dutta-202510396/
-
-💻 **GitHub:** https://github.com/ishitadutta2
-
-🌐 **Portfolio:** https://ishitadutta2.github.io/ishita-portfolio/
+in your browser.
 
 ---
 
-## ⭐ If you like this project
+# 📬 Contact
 
-Please consider giving it a **⭐ Star** on GitHub!
+**👩‍💻 Ishita Dutta**
+
+📧 Email: duttaishita112@gmail.com
+
+💼 LinkedIn:
+https://linkedin.com/in/ishita-dutta-202510396/
+
+💻 GitHub:
+https://github.com/ishitadutta2
+
+🌐 Portfolio:
+https://ishitadutta2.github.io/ishita-portfolio/
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
+
+It motivates me to build more exciting projects!
 
 ---
 
 <div align="center">
 
-Made with ❤️ by **Ishita Dutta**
+### Thank you for visiting my portfolio! ❤️
 
-© 2026 All Rights Reserved.
+Made with HTML, CSS & JavaScript
+
+© 2026 Ishita Dutta. All Rights Reserved.
 
 </div>
