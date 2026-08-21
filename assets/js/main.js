@@ -98,7 +98,7 @@ window.addEventListener('scroll', scrollHeader)
 /*=============== SWIPER WORK ===============*/
 try {
    if (typeof Swiper !== 'undefined' && document.querySelector('.work__swiper')) {
-      new Swiper('.work__swiper', {
+      const workSwiper = new Swiper('.work__swiper', {
          loop: false,
          spaceBetween: 24,
          breakpoints: {
@@ -109,8 +109,26 @@ try {
          pagination: {
             el: '.swiper-pagination',
             clickable: true
-         }
+         },
+         // The project cards' icons come from the Remix Icon web font. If
+         // Swiper measures slide sizes before that font finishes loading,
+         // later slides can end up mis-positioned (only the first slide
+         // looks right, the rest look broken/blank until something forces
+         // a recalculation) — this is exactly what was happening on mobile.
+         // observer/observeParents auto-recalculates on any layout change...
+         observer: true,
+         observeParents: true
       })
+
+      // ...and this is a direct, explicit fallback: once the page (fonts
+      // included) has fully finished loading, force one more recalculation.
+      window.addEventListener('load', () => workSwiper.update())
+
+      // Belt-and-suspenders for browsers that support the Font Loading API:
+      // update again the moment the icon font itself reports ready.
+      if (document.fonts && document.fonts.ready) {
+         document.fonts.ready.then(() => workSwiper.update())
+      }
    }
 } catch (err) {
    console.error('Swiper failed to initialize:', err)
