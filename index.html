@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Ishita Dutta — CSE undergraduate at Heritage Institute of Technology building AI-powered web apps with Python, Flask, and the Gemini API. Portfolio, projects, and open-source work.">
+   <meta name="robots" content="index, follow">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS - Insert link for icons ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+   <!--=============== SWIPER CSS - Insert link for swiperjs ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Ishita Dutta | Portfolio</title>
+</head>
+<body>
+   <!--==================== HEADER & NAV ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav__logo">Ishita<span>.</span></a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
+
+               <li>
+                  <a href="#about" class="nav__link">About</a>
+               </li>
+
+               <li>
+                  <a href="#work" class="nav__link">Projects</a>
+               </li>
+
+               <li>
+                  <a href="#services" class="nav__link">Services</a>
+               </li>
+
+               <li>
+                  <a href="#skills" class="nav__link">Skills</a>
+               </li>
+
+               <li>
+                  <a href="#education" class="nav__link">Education</a>
+               </li>
+
+               <li>
+                  <a href="#experience" class="nav__link">Experience</a>
+               </li>
+
+               <li>
+                  <a href="#certifications" class="nav__link">Certifications</a>
+               </li>
+
+               <li>
+                  <a href="#contact" class="nav__link">Contact</a>
+               </li>
+            </ul>
+
+            <button type="button" class="nav__menu-resume js-resume-trigger">
+               <i class="ri-file-download-line"></i> View / Download Resume
+            </button>
+
+            <!-- Close -->
+            <button class="nav__close" id="nav-close" aria-label="Close menu">
+               <i class="ri-close-large-line"></i>
+            </button>
+         </div>
+
+         <div class="nav__buttons">
+            <button type="button" class="nav__resume js-resume-trigger">Resume</button>
+            <a href="#contact" class="nav__contact">Contact me</a>
+         </div>
+
+         <!-- Toggle -->
+         <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+            <i class="ri-menu-line"></i>
+         </button>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!-- CUSTOM CURSOR -->
+      <div class="cursor" id="cursor"></div>
+      <div class="cursor-dot" id="cursor-dot"></div>
+      <span class="scrollbar" id="scrollbar"></span>
+
+      <!--==================== HOME SECTION ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__data">
+               <div class="home__terminal">
+                  <div class="home__terminal-bar">
+                     <span class="home__terminal-dot home__terminal-dot--red"></span>
+                     <span class="home__terminal-dot home__terminal-dot--yellow"></span>
+                     <span class="home__terminal-dot home__terminal-dot--green"></span>
+                     <span class="home__terminal-label">ishita@portfolio:~</span>
+                  </div>
+
+                  <div class="home__terminal-body">
+                     <p class="home__terminal-line">
+                        <span class="home__prompt">whoami</span>
+                     </p>
+
+                     <h1 class="home__title">Ishita Dutta</h1>
+
+                     <p class="home__terminal-line home__terminal-line--role">
+                        <span class="home__prompt">$</span>
+                        <span class="home__role" id="home-typed">Web Developer</span>
+                     </p>
+                  </div>
+               </div>
+
+               <p class="home__description">
+                  I build AI-powered web apps and clean, responsive interfaces with Python, Flask,
+                  and the Gemini API — and I'm always looking for the next problem worth solving.
+               </p>
+
+               <div class="home__buttons">
+                  <button type="button" class="button js-resume-trigger">Download Resume</button>
+                  <a href="#contact" class="button button--ghost">Contact me</a>
+               </div>
+
+               <div class="home__social">
+                  <a href="https://github.com/ishitadutta2" target="_blank" rel="noopener" class="home__social-link" aria-label="GitHub">
+                     <i class="ri-github-fill"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank" rel="noopener" class="home__social-link" aria-label="LinkedIn">
+                     <i class="ri-linkedin-fill"></i>
+                  </a>
+                  <a href="mailto:duttaishita112@gmail.com" class="home__social-link" aria-label="Email">
+                     <i class="ri-mail-fill"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__image-container">
+               <div class="home__text" id="home-text" data-text="PYTHON - FLASK - AI - "></div>
+
+               <div class="home__image">
+                  <img src="assets/img/ishita-photo.jpeg" alt="Ishita Dutta">
+               </div>
+            </div>
+         </div>
+
+         <div class="blob-big"></div>
+         <div class="blob-small"></div>
+      </section>
+
+      <!--==================== ABOUT SECTION ====================-->
+      <section class="about section" id="about">
+         <h2 class="section__title">Get to Know <span>Me</span></h2>
+         <p class="about__subtitle">A quick summary of who I am and what drives me.</p>
+
+         <div class="about__cards container grid">
+            <div class="about__card">
+               <h3 class="about__card-title">My Journey</h3>
+               <p class="about__card-text">
+                  Motivated Computer Science undergraduate with a strong interest in AI, Web
+                  Development, and UI/UX Design. Eager to contribute to innovative projects,
+                  solve real-world problems, and continuously enhance my technical expertise
+                  in a collaborative environment.
+               </p>
+            </div>
+
+            <div class="about__card">
+               <h3 class="about__card-title">Areas of Interest</h3>
+               <div class="about__tags">
+                  <span class="about__tag">Artificial Intelligence</span>
+                  <span class="about__tag">Web Development</span>
+                  <span class="about__tag">UI/UX Design</span>
+                  <span class="about__tag">Problem Solving</span>
+                  <span class="about__tag">Open Source</span>
+               </div>
+            </div>
+
+            <div class="about__card">
+               <h3 class="about__card-title">Beyond Academics</h3>
+               <ul class="about__list">
+                  <li>Participated in hackathons and coding competitions.</li>
+                  <li>Attended AI and software development workshops.</li>
+                  <li>Completed 4th year in drawing; enjoys art &amp; creative design.</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="about__info container grid">
+            <div class="about__info-item">
+               <span class="about__info-label">Location</span>
+               <span class="about__info-value">Kolkata, West Bengal</span>
+            </div>
+            <div class="about__info-item">
+               <span class="about__info-label">Degree</span>
+               <span class="about__info-value">B.Tech, CSE</span>
+            </div>
+            <div class="about__info-item">
+               <span class="about__info-label">College</span>
+               <span class="about__info-value">Heritage Institute of Technology</span>
+            </div>
+            <div class="about__info-item">
+               <span class="about__info-label">Languages</span>
+               <span class="about__info-value">English, Bengali, Hindi</span>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== WORK SECTION ====================-->
+      <section class="work section" id="work">
+         <h2 class="section__title">Featured <span>Projects</span></h2>
+
+         <div class="work__container container">
+            <div class="work__swiper swiper">
+               <div class="swiper-wrapper">
+                  <div class="work__card swiper-slide">
+                     <div class="work__img-wrapper">
+                        <i class="ri-git-merge-line work__icon" aria-hidden="true"></i>
+                     </div>
+                     <div class="work__data">
+                        <span class="work__number">01</span>
+                        <h3 class="work__name">MergeFlow</h3>
+                        <p class="work__description">
+                           A simple web tool that merges multiple PDF files into one, right in the browser.
+                        </p>
+                        <div class="work__links">
+                           <a href="https://github.com/ishitadutta2/MergeFlow" target="_blank" rel="noopener" class="work__link">
+                              <i class="ri-github-fill"></i> View on GitHub
+                           </a>
+                           <a href="https://ishitadutta2.github.io/MergeFlow/" target="_blank" rel="noopener" class="work__link">
+                              <i class="ri-external-link-line"></i> Live Site
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="work__card swiper-slide">
+                     <div class="work__img-wrapper">
+                        <i class="ri-file-zip-line work__icon" aria-hidden="true"></i>
+                     </div>
+                     <div class="work__data">
+                        <span class="work__number">02</span>
+                        <h3 class="work__name">Shrinkly</h3>
+                        <p class="work__description">
+                           A PDF compressor that shrinks file size right in the browser, no upload to a server needed.
+                        </p>
+                        <div class="work__links">
+                           <a href="https://github.com/ishitadutta2/SHRINKLY" target="_blank" rel="noopener" class="work__link">
+                              <i class="ri-github-fill"></i> View on GitHub
+                           </a>
+                           <a href="https://ishitadutta2.github.io/SHRINKLY/" target="_blank" rel="noopener" class="work__link">
+                              <i class="ri-external-link-line"></i> Live Site
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="work__card swiper-slide">
+                     <div class="work__img-wrapper">
+                        <i class="ri-movie-2-line work__icon" aria-hidden="true"></i>
+                     </div>
+                     <div class="work__data">
+                        <span class="work__number">03</span>
+                        <h3 class="work__name">AI Mood-Based Entertainment Recommender</h3>
+                        <p class="work__description">
+                           Recommends movies, music, books, anime and activities based on mood, through
+                           an interactive dashboard powered by the Gemini API.
+                        </p>
+                        <div class="work__links">
+                           <a href="https://github.com/ishitadutta2/MoodFlix-AI" target="_blank" rel="noopener" class="work__link">
+                              <i class="ri-github-fill"></i> View on GitHub
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="swiper-pagination"></div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES SECTION ====================-->
+      <section class="services section" id="services">
+         <h2 class="section__title"><span>My</span> Services</h2>
+
+         <div class="services__container container grid">
+            <div class="services__card">
+               <div class="services__header">
+                  <h3 class="services__name">Web Developer</h3>
+                  <i class="ri-arrow-down-s-line services__toggle"></i>
+               </div>
+               <div class="services__data">
+                  <p class="services__description">
+                     Building full features end to end, from a Flask backend to a responsive,
+                     interactive frontend, for AI-powered platforms.
+                  </p>
+                  <span class="services__item">Python &amp; Flask</span>
+                  <span class="services__item">HTML5, CSS3, JavaScript</span>
+                  <span class="services__item">Responsive Web Design</span>
+                  <span class="services__item">Git &amp; GitHub</span>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <div class="services__header">
+                  <h3 class="services__name">AI/ML Enthusiast</h3>
+                  <i class="ri-arrow-down-s-line services__toggle"></i>
+               </div>
+               <div class="services__data">
+                  <p class="services__description">
+                     Exploring machine learning fundamentals and prompt engineering, and applying
+                     them through the Gemini API in real projects.
+                  </p>
+                  <span class="services__item">Machine Learning Fundamentals</span>
+                  <span class="services__item">Prompt Engineering</span>
+                  <span class="services__item">Gemini API Integration</span>
+                  <span class="services__item">IBM ML with Python (Coursera)</span>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <div class="services__header">
+                  <h3 class="services__name">UI/UX Designer</h3>
+                  <i class="ri-arrow-down-s-line services__toggle"></i>
+               </div>
+               <div class="services__data">
+                  <p class="services__description">
+                     Designing interfaces that stay usable while feeling a little more alive,
+                     helped along by four years of drawing.
+                  </p>
+                  <span class="services__item">User Interface Design</span>
+                  <span class="services__item">User Experience Design</span>
+                  <span class="services__item">Dashboard Design</span>
+                  <span class="services__item">Gamified Interfaces</span>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <div class="services__header">
+                  <h3 class="services__name">Open Source Contributor</h3>
+                  <i class="ri-arrow-down-s-line services__toggle"></i>
+               </div>
+               <div class="services__data">
+                  <p class="services__description">
+                     Contributing to open-source projects through GirlScript Summer of Code 2026,
+                     implementing features, resolving issues, and collaborating with mentors.
+                  </p>
+                  <span class="services__item">GSSoC 2026 Contributor</span>
+                  <span class="services__item">Issue Resolution</span>
+                  <span class="services__item">Documentation</span>
+                  <span class="services__item">Team Collaboration</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SKILLS SECTION ====================-->
+      <section class="skills section" id="skills">
+         <h2 class="section__title">My <span>Skills</span></h2>
+
+         <div class="skills__container container grid">
+            <div class="skills__group">
+               <h3 class="skills__title">Languages</h3>
+               <div class="skills__box">
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                     <span>Python</span>
+                  </div>
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                     <span>C</span>
+                  </div>
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                     <span>JavaScript</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="skills__group">
+               <h3 class="skills__title">Web Technologies</h3>
+               <div class="skills__box">
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                     <span>HTML5</span>
+                  </div>
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                     <span>CSS3</span>
+                  </div>
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter:invert(1)">
+                     <span>Flask</span>
+                  </div>
+               </div>
+            </div>
+
+            <div class="skills__group">
+               <h3 class="skills__title">Tools &amp; AI</h3>
+               <div class="skills__box">
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                     <span>Git</span>
+                  </div>
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)">
+                     <span>GitHub</span>
+                  </div>
+                  <div class="skills__item">
+                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                     <span>VS Code</span>
+                  </div>
+                  <div class="skills__item">
+                     <i class="ri-brain-line" style="font-size:18px;color:var(--first-color)"></i>
+                     <span>Prompt Engineering</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== EDUCATION SECTION ====================-->
+      <section class="education section" id="education">
+         <h2 class="section__title">My <span>Education</span></h2>
+
+         <div class="timeline container">
+            <div class="timeline__item">
+               <span class="timeline__dot"></span>
+               <span class="timeline__date">Sept 2025 — Present</span>
+               <h3 class="timeline__title">B.Tech in Computer Science &amp; Engineering</h3>
+               <p class="timeline__place">Heritage Institute of Technology, Kolkata, West Bengal</p>
+               <span class="timeline__tag">CGPA: 9.15 (1st Semester)</span>
+               <span class="timeline__tag">CGPA: 8.7 (2nd Semester)</span>
+            </div>
+
+            <div class="timeline__item">
+               <span class="timeline__dot"></span>
+               <span class="timeline__date">WBBSE</span>
+               <h3 class="timeline__title">Class 12 Boards</h3>
+               <p class="timeline__place">Barabhum High School, Purulia, West Bengal</p>
+               <span class="timeline__tag">82%</span>
+            </div>
+
+            <div class="timeline__item">
+               <span class="timeline__dot"></span>
+               <span class="timeline__date">WBBSE</span>
+               <h3 class="timeline__title">Class 10 Boards</h3>
+               <p class="timeline__place">Barabazar Girls' High School, Purulia, West Bengal</p>
+               <span class="timeline__tag">93%</span>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== EXPERIENCE SECTION ====================-->
+      <section class="experience section" id="experience">
+         <h2 class="section__title">My <span>Experience</span></h2>
+
+         <div class="timeline container">
+            <div class="timeline__item">
+               <span class="timeline__dot"></span>
+               <span class="timeline__date">July 2026 — Present</span>
+               <h3 class="timeline__title">Open Source Contributor</h3>
+               <p class="timeline__place">GirlScript Summer of Code (GSSoC) 2026</p>
+               <ul class="timeline__list">
+                  <li>Implementing features, resolving issues, and improving project documentation.</li>
+                  <li>Collaborating with mentors and contributors using Git and GitHub in a team-based environment.</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="experience__extra container">
+            <h3 class="experience__extra-title">Also on the side</h3>
+            <div class="experience__tags">
+               <span class="experience__tag">Hackathons &amp; Coding Competitions</span>
+               <span class="experience__tag">AI &amp; Software Development Workshops</span>
+               <span class="experience__tag">Collaborative Technical Projects</span>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CERTIFICATIONS SECTION ====================-->
+      <section class="certifications section" id="certifications">
+         <h2 class="section__title"><span>Certifications</span></h2>
+
+         <div class="certifications__container container grid">
+            <div class="certifications__card">
+               <span class="certifications__icon"><i class="ri-award-fill"></i></span>
+               <div>
+                  <h3 class="certifications__name">IBM Machine Learning with Python</h3>
+                  <span class="certifications__issuer">Coursera</span>
+               </div>
+            </div>
+
+            <div class="certifications__card">
+               <span class="certifications__icon"><i class="ri-code-box-fill"></i></span>
+               <div>
+                  <h3 class="certifications__name">Python Programming</h3>
+                  <span class="certifications__issuer">Certificate Course</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CONTACT SECTION ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">Contact <span>Me</span></h2>
+         <p class="contact__subtitle">Open to internships, collaborations, and interesting problems.</p>
+
+         <div class="contact__container container grid">
+            <div class="contact__data">
+               <span class="contact__badge">
+                  <span class="contact__badge-dot"></span>
+                  Currently available
+               </span>
+
+               <h3 class="contact__title">Get in touch</h3>
+
+               <div class="contact__address">
+                  <a href="mailto:duttaishita112@gmail.com" class="contact__information">
+                     <span class="contact__icon"><i class="ri-mail-fill"></i></span>
+                     <div>
+                        <span class="contact__information-title">Email</span>
+                        <p class="contact__information-data">duttaishita112@gmail.com</p>
+                     </div>
+                  </a>
+
+                  <a href="https://www.google.com/maps/search/Kolkata,+West+Bengal" target="_blank" rel="noopener" class="contact__information">
+                     <span class="contact__icon"><i class="ri-map-pin-fill"></i></span>
+                     <div>
+                        <span class="contact__information-title">Location</span>
+                        <p class="contact__information-data">Kolkata, West Bengal, India</p>
+                     </div>
+                  </a>
+                  <!-- Insert your location in Google Maps (https://www.google.com/maps) -> Share -> Copy link -->
+
+                  <a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank" rel="noopener" class="contact__information">
+                     <span class="contact__icon"><i class="ri-linkedin-fill"></i></span>
+                     <div>
+                        <span class="contact__information-title">LinkedIn</span>
+                        <p class="contact__information-data">ishita-dutta-202510396</p>
+                     </div>
+                  </a>
+
+                  <a href="https://github.com/ishitadutta2" target="_blank" rel="noopener" class="contact__information">
+                     <span class="contact__icon"><i class="ri-github-fill"></i></span>
+                     <div>
+                        <span class="contact__information-title">GitHub</span>
+                        <p class="contact__information-data">ishitadutta2</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="contact__form-wrapper">
+               <h3 class="contact__form-title">Send a message</h3>
+               <p class="contact__form-subtitle">I usually reply within a day or two.</p>
+
+               <!--
+                  action/method make this a real, working HTML form on its own —
+                  it POSTs straight to FormSubmit even if JavaScript fails to load.
+                  main.js progressively enhances it into an AJAX submit with an
+                  inline status message, and falls back to this native submit
+                  (a real page navigation) if the AJAX request can't go through.
+               -->
+               <form
+                  class="contact__form"
+                  id="contact-form"
+                  action="https://formsubmit.co/duttaishita112@gmail.com"
+                  method="POST"
+               >
+                  <input type="hidden" name="_subject" value="New message from your portfolio">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_next" value="thank-you.html">
+                  <!-- Honeypot field: real visitors never fill this in, bots often do -->
+                  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                  <div class="contact__form-row">
+                     <div class="contact__form-div">
+                        <input type="text" name="name" class="contact__form-input" placeholder="Your name" required>
+                     </div>
+                     <div class="contact__form-div">
+                        <input type="email" name="email" class="contact__form-input" placeholder="Your email" required>
+                     </div>
+                  </div>
+                  <div class="contact__form-div">
+                     <input type="text" name="subject" class="contact__form-input" placeholder="Subject">
+                  </div>
+                  <div class="contact__form-div">
+                     <textarea name="message" class="contact__form-input" placeholder="Your message" required></textarea>
+                  </div>
+                  <button type="submit" class="contact__button button" id="contact-button">
+                     Send message <i class="ri-arrow-right-line"></i>
+                  </button>
+                  <p id="contact-status" class="contact__status"></p>
+               </form>
+            </div>
+         </div>
+
+         <div class="blob-big"></div>
+         <div class="blob-small"></div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <h2 class="footer__title">
+            COLLABORATE WITH ISHITA AND START YOUR
+            JOURNEY IN AI &amp; WEB DEVELOPMENT TODAY.
+         </h2>
+
+         <div class="footer__data">
+            <ul class="footer__links">
+               <li><a href="#about" class="footer__link">About</a></li>
+               <li><a href="#work" class="footer__link">Projects</a></li>
+               <li><a href="#services" class="footer__link">Services</a></li>
+               <li><a href="#skills" class="footer__link">Skills</a></li>
+               <li><a href="#education" class="footer__link">Education</a></li>
+               <li><a href="#experience" class="footer__link">Experience</a></li>
+               <li><a href="#certifications" class="footer__link">Certifications</a></li>
+               <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+
+            <div class="footer__social">
+               <a href="https://github.com/ishitadutta2" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub">
+                  <i class="ri-github-fill"></i>
+               </a>
+               <a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+                  <i class="ri-linkedin-fill"></i>
+               </a>
+               <a href="mailto:duttaishita112@gmail.com" class="footer__social-link" aria-label="Email">
+                  <i class="ri-mail-fill"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy">&#169; All Rights Reserved By Ishita Dutta</span>
+         </div>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--========== RESUME MODAL ==========-->
+   <div class="resume-modal" id="resume-modal" aria-hidden="true">
+      <div class="resume-modal__overlay" id="resume-modal-overlay"></div>
+
+      <div class="resume-modal__box" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+         <button type="button" class="resume-modal__close" id="resume-modal-close" aria-label="Close">
+            <i class="ri-close-line"></i>
+         </button>
+
+         <div class="resume-modal__icon"><i class="ri-file-pdf-2-line"></i></div>
+
+         <h3 class="resume-modal__title" id="resume-modal-title">Ishita's Resume</h3>
+         <p class="resume-modal__text">Would you like to view it in a new tab or download a copy?</p>
+
+         <div class="resume-modal__actions">
+            <a href="assets/ishita-dutta-resume.pdf" target="_blank" rel="noopener" class="button button--ghost resume-modal__action">
+               <i class="ri-eye-line"></i> View
+            </a>
+            <a href="assets/ishita-dutta-resume.pdf" download="Ishita-Dutta-Resume.pdf" class="button resume-modal__action">
+               <i class="ri-download-line"></i> Download
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!--=============== SCROLLREVEAL - Insert link for animations ===============-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+   <!--=============== TYPED JS - Insert link for text animations ===============-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+   <!--=============== SWIPER JS - Insert link for swiperjs ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>

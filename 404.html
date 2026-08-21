@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Page not found — Ishita Dutta's portfolio.">
+   <meta name="robots" content="noindex, follow">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>404 — Page Not Found | Ishita Dutta</title>
+</head>
+<body>
+   <main class="status-page">
+      <div class="status-page__terminal">
+         <div class="home__terminal-bar">
+            <span class="home__terminal-dot home__terminal-dot--red"></span>
+            <span class="home__terminal-dot home__terminal-dot--yellow"></span>
+            <span class="home__terminal-dot home__terminal-dot--green"></span>
+            <span class="home__terminal-label">ishita@portfolio:~</span>
+         </div>
+
+         <div class="home__terminal-body status-page__body">
+            <p class="home__terminal-line">
+               <span class="home__prompt">cd</span>
+               <span id="status-path">this-page</span>
+            </p>
+            <p class="status-page__error" id="status-error">
+               bash: cd: this-page: No such file or directory
+            </p>
+
+            <h1 class="status-page__code">404</h1>
+            <p class="status-page__message">
+               This page doesn't exist — it was probably moved, renamed, or never built.
+               Let's get you back on track.
+            </p>
+
+            <div class="status-page__buttons">
+               <a href="index.html" class="button">
+                  <i class="ri-home-4-line"></i> Back to Home
+               </a>
+               <a href="index.html#contact" class="button button--ghost">
+                  <i class="ri-mail-line"></i> Contact me
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="blob-big"></div>
+      <div class="blob-small"></div>
+   </main>
+
+   <script>
+      // Fill in the actual path that was requested, so the "terminal" line
+      // reflects what the visitor actually typed/clicked.
+      (function () {
+         var path = window.location.pathname.split('/').pop() || 'this-page'
+         var pathEl = document.getElementById('status-path')
+         var errorEl = document.getElementById('status-error')
+         if (pathEl) pathEl.textContent = path
+         if (errorEl) errorEl.textContent = 'bash: cd: ' + path + ': No such file or directory'
+      })()
+   </script>
+</body>
+</html>
