@@ -393,7 +393,13 @@ if (typeof ScrollReveal !== 'undefined') {
    sr.reveal('.home__image-container', { delay: 200 })
    sr.reveal('.about__card', { interval: 100 })
    sr.reveal('.about__info-item', { interval: 80 })
-   sr.reveal('.work__card', { interval: 100 })
+   // NOTE: individually revealing `.work__card` breaks the mobile Swiper
+   // carousel — cards 2+ sit off-screen (translateX) when the page loads,
+   // so ScrollReveal never sees them enter the viewport and leaves them at
+   // opacity: 0 forever, even after the user swipes to them. Revealing the
+   // whole container once (it IS in the normal scroll flow) fixes this
+   // while keeping the same fade-up entrance effect.
+   sr.reveal('.work__container', {})
    sr.reveal('.services__card', { interval: 100 })
    sr.reveal('.skills__group', { interval: 100 })
    sr.reveal('.timeline__item', { interval: 120 })
