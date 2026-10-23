@@ -5,9 +5,14 @@
    <meta name="description" content="Ishita Dutta — CSE undergraduate at Heritage Institute of Technology building AI-powered web apps with Python, Flask, and the Gemini API. Portfolio, projects, and open-source work.">
    <meta name="robots" content="index, follow">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#0a0d0a">
 
-   <!--=============== FAVICON ===============-->
-   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <!--=============== GOOGLE FONTS (faster loading) ===============-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--=============== FAVICON ===============-->
+   <link rel="icon" href="assets/img/favicon.png" type="image/png">
 
    <!--=============== REMIXICONS - Insert link for icons ===============-->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
@@ -108,7 +113,8 @@
 
                   <div class="home__terminal-body">
                      <p class="home__terminal-line">
-                        <span class="home__prompt">whoami</span>
+                        <span class="home__prompt">$</span>
+                        <span class="home__cmd">whoami</span>
                      </p>
 
                      <h1 class="home__title">Ishita Dutta</h1>
@@ -116,6 +122,18 @@
                      <p class="home__terminal-line home__terminal-line--role">
                         <span class="home__prompt">$</span>
                         <span class="home__role" id="home-typed">Web Developer</span>
+                     </p>
+
+                     <p class="home__terminal-line home__terminal-line--info">
+                        <span class="home__prompt">$</span>
+                        <span class="home__cmd">stack</span>
+                        <span class="home__out">Python, Flask, Gemini API</span>
+                     </p>
+
+                     <p class="home__terminal-line home__terminal-line--info">
+                        <span class="home__prompt">$</span>
+                        <span class="home__cmd">status</span>
+                        <span class="home__out home__out--live">open to internships &amp; collaborations</span>
                      </p>
                   </div>
                </div>
@@ -134,7 +152,7 @@
                   <a href="https://github.com/ishitadutta2" target="_blank" rel="noopener" class="home__social-link" aria-label="GitHub">
                      <i class="ri-github-fill"></i>
                   </a>
-                  <a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank" rel="noopener" class="home__social-link" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/ishita-dutta2/" target="_blank" rel="noopener" class="home__social-link" aria-label="LinkedIn">
                      <i class="ri-linkedin-fill"></i>
                   </a>
                   <a href="mailto:duttaishita112@gmail.com" class="home__social-link" aria-label="Email">
@@ -144,7 +162,7 @@
             </div>
 
             <div class="home__image-container">
-               <div class="home__text" id="home-text" data-text="PYTHON - FLASK - AI - "></div>
+               <div class="home__text" id="home-text" data-text="Python • Flask • Gemini API • Web Dev • "></div>
 
                <div class="home__image">
                   <img src="assets/img/ishita-photo.jpeg" alt="Ishita Dutta">
@@ -225,7 +243,6 @@
                         <i class="ri-git-merge-line work__icon" aria-hidden="true"></i>
                      </div>
                      <div class="work__data">
-                        <span class="work__number">01</span>
                         <h3 class="work__name">MergeFlow</h3>
                         <p class="work__description">
                            A simple web tool that merges multiple PDF files into one, right in the browser.
@@ -246,7 +263,6 @@
                         <i class="ri-file-zip-line work__icon" aria-hidden="true"></i>
                      </div>
                      <div class="work__data">
-                        <span class="work__number">02</span>
                         <h3 class="work__name">Shrinkly</h3>
                         <p class="work__description">
                            A PDF compressor that shrinks file size right in the browser, no upload to a server needed.
@@ -267,7 +283,6 @@
                         <i class="ri-movie-2-line work__icon" aria-hidden="true"></i>
                      </div>
                      <div class="work__data">
-                        <span class="work__number">03</span>
                         <h3 class="work__name">AI Mood-Based Entertainment Recommender</h3>
                         <p class="work__description">
                            Recommends movies, music, books, anime and activities based on mood, through
@@ -366,62 +381,49 @@
       <section class="skills section" id="skills">
          <h2 class="section__title">My <span>Skills</span></h2>
 
-         <div class="skills__container container grid">
-            <div class="skills__group">
-               <h3 class="skills__title">Languages</h3>
-               <div class="skills__box">
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                     <span>Python</span>
-                  </div>
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-                     <span>C</span>
-                  </div>
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                     <span>JavaScript</span>
-                  </div>
+         <div class="skills__marquee container" aria-label="My skills">
+            <div class="skills__row skills__row--right" style="--speed:38s">
+               <div class="skills__track">
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter:invert(1)"><span>Flask</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"><span>GitHub</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+                  <div class="skills__item"><i class="ri-brain-line" style="font-size:18px;color:var(--first-color)"></i><span>Prompt Engineering</span></div>
                </div>
             </div>
 
-            <div class="skills__group">
-               <h3 class="skills__title">Web Technologies</h3>
-               <div class="skills__box">
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                     <span>HTML5</span>
-                  </div>
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                     <span>CSS3</span>
-                  </div>
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter:invert(1)">
-                     <span>Flask</span>
-                  </div>
+            <div class="skills__row skills__row--left" style="--speed:44s">
+               <div class="skills__track">
+                  <div class="skills__item"><i class="ri-brain-line" style="font-size:18px;color:var(--first-color)"></i><span>Prompt Engineering</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"><span>GitHub</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter:invert(1)"><span>Flask</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
                </div>
             </div>
 
-            <div class="skills__group">
-               <h3 class="skills__title">Tools &amp; AI</h3>
-               <div class="skills__box">
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                     <span>Git</span>
-                  </div>
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)">
-                     <span>GitHub</span>
-                  </div>
-                  <div class="skills__item">
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-                     <span>VS Code</span>
-                  </div>
-                  <div class="skills__item">
-                     <i class="ri-brain-line" style="font-size:18px;color:var(--first-color)"></i>
-                     <span>Prompt Engineering</span>
-                  </div>
+            <div class="skills__row skills__row--right" style="--speed:34s">
+               <div class="skills__track">
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="filter:invert(1)"><span>Flask</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"><span>GitHub</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+                  <div class="skills__item"><i class="ri-brain-line" style="font-size:18px;color:var(--first-color)"></i><span>Prompt Engineering</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                  <div class="skills__item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
                </div>
             </div>
          </div>
@@ -541,11 +543,11 @@
                   </a>
                   <!-- Insert your location in Google Maps (https://www.google.com/maps) -> Share -> Copy link -->
 
-                  <a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank" rel="noopener" class="contact__information">
+                  <a href="https://www.linkedin.com/in/ishita-dutta2/" target="_blank" rel="noopener" class="contact__information">
                      <span class="contact__icon"><i class="ri-linkedin-fill"></i></span>
                      <div>
                         <span class="contact__information-title">LinkedIn</span>
-                        <p class="contact__information-data">ishita-dutta-202510396</p>
+                        <p class="contact__information-data">ishita-dutta2</p>
                      </div>
                   </a>
 
@@ -614,8 +616,8 @@
    <footer class="footer">
       <div class="footer__container container grid">
          <h2 class="footer__title">
-            COLLABORATE WITH ISHITA AND START YOUR
-            JOURNEY IN AI &amp; WEB DEVELOPMENT TODAY.
+            Collaborate with Ishita and start your
+            journey in AI &amp; web development today.
          </h2>
 
          <div class="footer__data">
@@ -634,7 +636,7 @@
                <a href="https://github.com/ishitadutta2" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub">
                   <i class="ri-github-fill"></i>
                </a>
-               <a href="https://linkedin.com/in/ishita-dutta-202510396/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+               <a href="https://www.linkedin.com/in/ishita-dutta2/" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
                   <i class="ri-linkedin-fill"></i>
                </a>
                <a href="mailto:duttaishita112@gmail.com" class="footer__social-link" aria-label="Email">
@@ -677,11 +679,8 @@
       </div>
    </div>
 
-   <!--=============== SCROLLREVEAL - Insert link for animations ===============-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-
    <!--=============== TYPED JS - Insert link for text animations ===============-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
 
    <!--=============== SWIPER JS - Insert link for swiperjs ===============-->
    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

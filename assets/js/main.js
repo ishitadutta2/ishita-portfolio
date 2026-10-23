@@ -379,32 +379,48 @@ if (cursor && cursorDot && matchMedia('(hover: hover)').matches) {
    })
 }
 
-/*=============== SCROLLREVEAL ANIMATION ===============*/
-if (typeof ScrollReveal !== 'undefined') {
-   const sr = ScrollReveal({
-      origin: 'bottom',
-      distance: '2rem',
-      duration: 800,
-      delay: 100,
-      reset: false
+/*=============== SKILLS MARQUEE ===============*/
+/* Repeats each row's skills until half the track is wider than the row,
+   then doubles it, so the CSS animation (which slides by exactly half the
+   track) loops with no visible jump. Clones are hidden from screen readers. */
+const buildMarquee = () => {
+   document.querySelectorAll('.skills__track').forEach(track => {
+      // Reset to the original items before measuring (handles resize)
+      track.querySelectorAll('[data-clone]').forEach(c => c.remove())
+      const originals = Array.from(track.children)
+      const rowWidth = track.parentElement.clientWidth || window.innerWidth
+      const setWidth = track.scrollWidth || 1
+      const copies = Math.max(1, Math.ceil(rowWidth / setWidth)) * 2 - 1
+      for (let i = 0; i < copies; i++) {
+         originals.forEach(item => {
+            const clone = item.cloneNode(true)
+            clone.setAttribute('aria-hidden', 'true')
+            clone.setAttribute('data-clone', '')
+            track.appendChild(clone)
+         })
+      }
    })
-
-   sr.reveal('.home__data', {})
-   sr.reveal('.home__image-container', { delay: 200 })
-   sr.reveal('.about__card', { interval: 100 })
-   sr.reveal('.about__info-item', { interval: 80 })
-   // NOTE: individually revealing `.work__card` breaks the mobile Swiper
-   // carousel — cards 2+ sit off-screen (translateX) when the page loads,
-   // so ScrollReveal never sees them enter the viewport and leaves them at
-   // opacity: 0 forever, even after the user swipes to them. Revealing the
-   // whole container once (it IS in the normal scroll flow) fixes this
-   // while keeping the same fade-up entrance effect.
-   sr.reveal('.work__container', {})
-   sr.reveal('.services__card', { interval: 100 })
-   sr.reveal('.skills__group', { interval: 100 })
-   sr.reveal('.timeline__item', { interval: 120 })
-   sr.reveal('.certifications__card', { interval: 100 })
-   sr.reveal('.contact__data', {})
-   sr.reveal('.contact__form', { delay: 200 })
-   sr.reveal('.footer__title', {})
 }
+buildMarquee()
+// Item widths change slightly once the web font and icons finish loading,
+// so measure again then to be sure every row is always filled edge to edge.
+window.addEventListener('load', buildMarquee)
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(buildMarquee)
+let marqueeTimer
+window.addEventListener('resize', () => {
+   clearTimeout(marqueeTimer)
+   marqueeTimer = setTimeout(buildMarquee, 250)
+})
+
+/*=============== CARD SPOTLIGHT ===============*/
+/* Feeds the pointer position to each card as --mx / --my so the soft glow
+   in the CSS (.card::after) follows the cursor. */
+document.querySelectorAll(
+   '.about__card, .work__card, .services__card, .certifications__card, .skills__group, .timeline__item'
+).forEach(card => {
+   card.addEventListener('pointermove', (e) => {
+      const r = card.getBoundingClientRect()
+      card.style.setProperty('--mx', (e.clientX - r.left) + 'px')
+      card.style.setProperty('--my', (e.clientY - r.top) + 'px')
+   })
+})

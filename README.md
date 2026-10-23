@@ -11,7 +11,7 @@ Built as a static site (no build step, no framework) — plain HTML, CSS, and Ja
 - **About** — journey, areas of interest, beyond academics, quick facts
 - **Projects** — [MergeFlow](https://ishitadutta2.github.io/MergeFlow/), [Shrinkly](https://ishitadutta2.github.io/SHRINKLY/), and an AI mood-based entertainment recommender
 - **Services** — what she works on (Web Developer, AI/ML Enthusiast, UI/UX Designer, Open Source Contributor)
-- **Skills** — languages, web technologies, tools & AI
+- **Skills** — languages, web technologies, tools & AI, shown as rows of icons that scroll in opposite directions (pauses on hover)
 - **Education** — academic timeline
 - **Experience** — GSSoC 2026 and other work
 - **Certifications** — courses completed
@@ -24,7 +24,6 @@ Built as a static site (no build step, no framework) — plain HTML, CSS, and Ja
 - [Remix Icon](https://remixicon.com/) for icons
 - [Swiper](https://swiperjs.com/) for the projects carousel
 - [Typed.js](https://github.com/mattboldt/typed.js/) for the rotating role text
-- [ScrollReveal](https://scrollrevealjs.org/) for on-scroll animations
 - [FormSubmit](https://formsubmit.co/) for the contact form (no backend needed)
 
 ## Project structure
@@ -88,4 +87,4 @@ if JavaScript fails to load — it just won't show the inline status message in 
 
 - Email: duttaishita112@gmail.com
 - GitHub: [ishitadutta2](https://github.com/ishitadutta2)
-- LinkedIn: [ishita-dutta-202510396](https://linkedin.com/in/ishita-dutta-202510396/)
+- LinkedIn: [ishita-dutta2](https://www.linkedin.com/in/ishita-dutta2/)
